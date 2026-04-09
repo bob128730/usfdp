@@ -1,4 +1,5 @@
-﻿using Avalonia.Threading;
+﻿using Avalonia.Markup.Xaml.Templates;
+using Avalonia.Threading;
 using DTOs;
 using GameFinder.StoreHandlers.Steam;
 using MessageBox.Avalonia;
@@ -130,6 +131,8 @@ namespace Patcher.ViewModels
             Log($"Patching {file.Path}");
 
             var srcPath = file.FromFile.ToRelativePath().RelativeTo(gamePath);
+            var destPath = file.Path.ToRelativePath().RelativeTo(gamePath);
+            var tempPath = destPath.WithExtension(new Extension(".tmp"));
 
             Hash oldHash;
             await using (var srcStream = srcPath.Open(FileMode.Open, FileAccess.Read, FileShare.Read))
@@ -153,28 +156,34 @@ namespace Patcher.ViewModels
 
             Log($"Reading Patch File {file.PatchFile}");
             var patchFile = await Extractor.LoadFile(file.PatchFile);
-            var ms = new MemoryStream(patchFile);
 
-            var deltaApplier = new DeltaApplier();
-            var os = new MemoryStream();
-
-            using (var srcStream = srcPath.Open(FileMode.Open, FileAccess.Read, FileShare.Read))
+            await using (var os = tempPath.Open(FileMode.Create, FileAccess.ReadWrite, FileShare.None))
             {
-                deltaApplier.Apply(srcStream, new BinaryDeltaReader(ms, new NullProgressReporter()), os);
+                var ms = new MemoryStream(patchFile);
+                using (var srcStream = srcPath.Open(FileMode.Open, FileAccess.Read, FileShare.Read))
+                {
+                    var deltaApplier = new DeltaApplier();
+                    deltaApplier.Apply(srcStream, new BinaryDeltaReader(ms, new NullProgressReporter()), os);
+                }
+
+                Log("Verifying file");
+                os.Position = 0;
+                var finalHash = await os.HashingCopy(Stream.Null, CancellationToken.None);
+
+                if (finalHash != Hash.FromLong(file.DestHash))
+                    throw new Exception("Not patching file, result was not valid!");
             }
 
-            Log("Verifying file");
-            os.Position = 0;
-            var finalHash = await os.HashingCopy(Stream.Null, CancellationToken.None);
-
-            if (finalHash != Hash.FromLong(file.DestHash))
-                throw new Exception("Not patching file, result was not valid!");
-            
             Log("File verified, writing file");
+            if (destPath.FileExists())
+                destPath.Delete();
 
-            await file.Path.ToRelativePath().RelativeTo(GamePath).WriteAllBytesAsync(os.ToArray());
-            
+            File.Move(tempPath.ToString(), destPath.ToString());
+
+            // await file.Path.ToRelativePath().RelativeTo(GamePath).WriteAllBytesAsync(os.ToArray());
+
             Log("File patched");
+            
         }
     }
 }
