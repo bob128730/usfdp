@@ -164,7 +164,7 @@ var proc = new ProcessHelper()
     //-r win-x64 -c Release -p:PublishReadyToRun=true --self-contained -o c:\tmp\publish -p:PublishSingleFile=true -p:DebugType=embedded -p:IncludeAllContentForSelfExtract=true
     Arguments = new object[]
     {
-        "/c", "dotnet", "publish", KnownFolders.CurrentDirectory.Parent.Combine("Patcher", "Patcher.csproj"),
+        "/c", "dotnet", "publish", KnownFolders.CurrentDirectory.Parent.Parent.Parent.Parent.Combine("Patcher", "Patcher.csproj"),
         "-r", "win-x64", "-c", "Release", "-p:PublishReadyToRun=true", "--self-contained", "-o",
         workingFolder.Combine("published"), "-p:PublishSingleFile=true", "-p:DebugType=embedded",
         "-p:IncludeAllContentForSelfExtract=true"
@@ -250,9 +250,9 @@ foreach (var build in builds)
     Console.WriteLine("Signing");
 
     
-    var signProc = new ProcessHelper
+   /* var signProc = new ProcessHelper
     {
-        Path = @"C:\Program Files (x86)\Windows Kits\10\bin\10.0.19041.0\x64\signtool.exe".ToAbsolutePath(),
+        Path = @"C:\Program Files (x86)\Windows Kits\10\bin\10.0.26100.0\x64\signtool.exe".ToAbsolutePath(),
         Arguments = new object[]
         {
             "sign", "/t", "http://timestamp.sectigo.com", name
@@ -277,7 +277,9 @@ foreach (var build in builds)
     signProcDisposable.Dispose();
     
     Console.WriteLine("\n");
+   */
 }
+//im poor 🙂
 
 
 /*var (response, info) = await nexusClient.ModFiles("Starfield"!, ModId);
