@@ -187,9 +187,9 @@ namespace Patcher.ViewModels
             foreach (var version in GameViewModel.GameVersions)
             {
                 var postfix = string.Join("_", version.Version.Split(".").Take(3));
-                if (gp.Combine("skse64_" + postfix + ".dll").FileExists())
+                if (gp.Combine("sfse_" + postfix + ".dll").FileExists())
                 {
-                    _logger.LogInformation("SKSE for {Version} found in install folder", version.Version);
+                    _logger.LogInformation("SFSE for {Version} found in install folder", version.Version);
                     SelectedVersion = version;
                     break;
                 }
