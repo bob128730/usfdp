@@ -1,0 +1,707 @@
+[
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "sfpLMK813Lk=",
+    "Meta": null,
+    "Name": "",
+    "Size": 985890723,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D - Main.ba2",
+      "Hash": "sfpLMK813Lk=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D - Main.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "kBmb76EPx74=",
+    "Meta": null,
+    "Name": "",
+    "Size": 1569247900,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D - Textures.ba2",
+      "Hash": "kBmb76EPx74=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D - Textures.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "PQQTMEyANes=",
+    "Meta": null,
+    "Name": "",
+    "Size": 164616346,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D - Voices_de.ba2",
+      "Hash": "PQQTMEyANes=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D - Voices_de.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "bY3PS4gxc88=",
+    "Meta": null,
+    "Name": "",
+    "Size": 162851795,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D - Voices_en.ba2",
+      "Hash": "bY3PS4gxc88=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D - Voices_en.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "gtMJ6FG7L9I=",
+    "Meta": null,
+    "Name": "",
+    "Size": 163125009,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D - Voices_es.ba2",
+      "Hash": "gtMJ6FG7L9I=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D - Voices_es.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "EKhNNlST0Oc=",
+    "Meta": null,
+    "Name": "",
+    "Size": 164824,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D - Voices_fr.ba2",
+      "Hash": "EKhNNlST0Oc=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D - Voices_fr.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "2WMJqHa9APk=",
+    "Meta": null,
+    "Name": "",
+    "Size": 175187088,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D - Voices_ja.ba2",
+      "Hash": "2WMJqHa9APk=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D - Voices_ja.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "4sUeXQ0tEKI=",
+    "Meta": null,
+    "Name": "",
+    "Size": 102030407,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS00D.esm",
+      "Hash": "4sUeXQ0tEKI=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS00D.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "R3W0l7VtpFQ=",
+    "Meta": null,
+    "Name": "",
+    "Size": 11667189,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS047 - Main.ba2",
+      "Hash": "R3W0l7VtpFQ=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS047 - Main.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "flqTi6XGinM=",
+    "Meta": null,
+    "Name": "",
+    "Size": 1036787,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS047 - Textures.ba2",
+      "Hash": "flqTi6XGinM=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS047 - Textures.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "5KecqPhxtnM=",
+    "Meta": null,
+    "Name": "",
+    "Size": 472022,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS047.esm",
+      "Hash": "5KecqPhxtnM=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS047.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "q4p5pswZfc8=",
+    "Meta": null,
+    "Name": "",
+    "Size": 303656303,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\BlueprintShips-Starfield.esm",
+      "Hash": "q4p5pswZfc8=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\BlueprintShips-Starfield.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "UmTyH0dMt3I=",
+    "Meta": null,
+    "Name": "",
+    "Size": 662916314,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS003 - Main.ba2",
+      "Hash": "UmTyH0dMt3I=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS003 - Main.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "Z14iHctoP24=",
+    "Meta": null,
+    "Name": "",
+    "Size": 364574597,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS003 - Textures.ba2",
+      "Hash": "Z14iHctoP24=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS003 - Textures.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "uFAd3GRbYkk=",
+    "Meta": null,
+    "Name": "",
+    "Size": 155070757,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS003 - Voices_en.ba2",
+      "Hash": "uFAd3GRbYkk=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS003 - Voices_en.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "BeS9B1Hgizs=",
+    "Meta": null,
+    "Name": "",
+    "Size": 33277935,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS003.esm",
+      "Hash": "BeS9B1Hgizs=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS003.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "69l9S5Lx/fo=",
+    "Meta": null,
+    "Name": "",
+    "Size": 25655559,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS004 - Main.ba2",
+      "Hash": "69l9S5Lx/fo=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS004 - Main.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "AqgLEeboPnY=",
+    "Meta": null,
+    "Name": "",
+    "Size": 46703446,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS004 - Textures.ba2",
+      "Hash": "AqgLEeboPnY=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS004 - Textures.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "KueLg/Shut8=",
+    "Meta": null,
+    "Name": "",
+    "Size": 254945,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS004.esm",
+      "Hash": "KueLg/Shut8=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS004.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "uFDFFd2pVlU=",
+    "Meta": null,
+    "Name": "",
+    "Size": 99571,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS006 - Main.ba2",
+      "Hash": "uFDFFd2pVlU=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS006 - Main.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "XCj3TkJl4W8=",
+    "Meta": null,
+    "Name": "",
+    "Size": 434638,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS006 - Textures.ba2",
+      "Hash": "XCj3TkJl4W8=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS006 - Textures.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "4MpyAiU0UNY=",
+    "Meta": null,
+    "Name": "",
+    "Size": 7315458,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS006.esm",
+      "Hash": "4MpyAiU0UNY=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS006.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "jA1wP7i1hZk=",
+    "Meta": null,
+    "Name": "",
+    "Size": 104970477,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS007 - Main.ba2",
+      "Hash": "jA1wP7i1hZk=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS007 - Main.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "jwZRcBcJ+KE=",
+    "Meta": null,
+    "Name": "",
+    "Size": 27312,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\SFBGS007.esm",
+      "Hash": "jwZRcBcJ+KE=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\SFBGS007.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "GYa1Hv+0pIY=",
+    "Meta": null,
+    "Name": "",
+    "Size": 217602241,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - Animations.ba2",
+      "Hash": "GYa1Hv+0pIY=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - Animations.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "cMy9i9dIT4w=",
+    "Meta": null,
+    "Name": "",
+    "Size": 1303513304,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - FaceMeshes.ba2",
+      "Hash": "cMy9i9dIT4w=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - FaceMeshes.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "FtZl7r1r2kM=",
+    "Meta": null,
+    "Name": "",
+    "Size": 7886029,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - GeneratedTextures.ba2",
+      "Hash": "FtZl7r1r2kM=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - GeneratedTextures.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "414584GUplU=",
+    "Meta": null,
+    "Name": "",
+    "Size": 135449833,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - Interface.ba2",
+      "Hash": "414584GUplU=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - Interface.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "zxTNd11Y4bc=",
+    "Meta": null,
+    "Name": "",
+    "Size": 13132434,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - LODMeshesPatch.ba2",
+      "Hash": "zxTNd11Y4bc=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - LODMeshesPatch.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "9CiAiF3OAUw=",
+    "Meta": null,
+    "Name": "",
+    "Size": 4294808439,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - LODTextures01.ba2",
+      "Hash": "9CiAiF3OAUw=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - LODTextures01.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "UeFVJHROC+4=",
+    "Meta": null,
+    "Name": "",
+    "Size": 51237581,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - LODTextures02.ba2",
+      "Hash": "UeFVJHROC+4=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - LODTextures02.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "uCLJNNu7t7Y=",
+    "Meta": null,
+    "Name": "",
+    "Size": 114281094,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - Localization.ba2",
+      "Hash": "uCLJNNu7t7Y=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - Localization.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "B2py/d0eZS0=",
+    "Meta": null,
+    "Name": "",
+    "Size": 17573425,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - Materials.ba2",
+      "Hash": "B2py/d0eZS0=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - Materials.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "Jof4q03IMls=",
+    "Meta": null,
+    "Name": "",
+    "Size": 3823107890,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - MeshesPatch.ba2",
+      "Hash": "Jof4q03IMls=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - MeshesPatch.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "OG8ZY3Z2bHA=",
+    "Meta": null,
+    "Name": "",
+    "Size": 38072258,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - Misc.ba2",
+      "Hash": "OG8ZY3Z2bHA=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - Misc.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "+B1iSN4eAtk=",
+    "Meta": null,
+    "Name": "",
+    "Size": 135947708,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - Particles.ba2",
+      "Hash": "+B1iSN4eAtk=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - Particles.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "1XGXHQjEqYo=",
+    "Meta": null,
+    "Name": "",
+    "Size": 95434602,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - Shaders.ba2",
+      "Hash": "1XGXHQjEqYo=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - Shaders.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "JaGrrcRM66A=",
+    "Meta": null,
+    "Name": "",
+    "Size": 4288252660,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - TexturesPatch01.ba2",
+      "Hash": "JaGrrcRM66A=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - TexturesPatch01.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "SC/DBfq1SWg=",
+    "Meta": null,
+    "Name": "",
+    "Size": 897887201,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield - WwiseSoundsPatch.ba2",
+      "Hash": "SC/DBfq1SWg=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield - WwiseSoundsPatch.ba2"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "Jn3bRfC3zZg=",
+    "Meta": null,
+    "Name": "",
+    "Size": 1457098614,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Data\\Starfield.esm",
+      "Hash": "Jn3bRfC3zZg=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Data\\Starfield.esm"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "F3Nyx6LvSz4=",
+    "Meta": null,
+    "Name": "",
+    "Size": 166240,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "DejaInsight.x64.dll",
+      "Hash": "F3Nyx6LvSz4=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|DejaInsight.x64.dll"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "ctva+MSMlQw=",
+    "Meta": null,
+    "Name": "",
+    "Size": 2702,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "High.ini",
+      "Hash": "ctva+MSMlQw=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|High.ini"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "mnRbCWGJloU=",
+    "Meta": null,
+    "Name": "",
+    "Size": 2742,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Low.ini",
+      "Hash": "mnRbCWGJloU=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Low.ini"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "bnAyuBFwxN4=",
+    "Meta": null,
+    "Name": "",
+    "Size": 2700,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Medium.ini",
+      "Hash": "bnAyuBFwxN4=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Medium.ini"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "yMMF3aNkrK4=",
+    "Meta": null,
+    "Name": "",
+    "Size": 102507432,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "Starfield.exe",
+      "Hash": "yMMF3aNkrK4=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|Starfield.exe"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "jTDeyg66iso=",
+    "Meta": null,
+    "Name": "",
+    "Size": 2940,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "VeryLow.ini",
+      "Hash": "jTDeyg66iso=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|VeryLow.ini"
+    }
+  },
+  {
+    "$type": "Archive, Wabbajack.Lib",
+    "Hash": "Cw4bNDm0GvI=",
+    "Meta": null,
+    "Name": "",
+    "Size": 655920,
+    "State": {
+      "$type": "GameFileSourceDownloader, Wabbajack.Lib",
+      "Game": "Starfield",
+      "GameFile": "clang_rt.asan_dynamic-x86_64.dll",
+      "Hash": "Cw4bNDm0GvI=",
+      "GameVersion": "1.16.236",
+      "PrimaryKeyString": "GameFileSourceDownloader+State|Starfield|1.16.236|clang_rt.asan_dynamic-x86_64.dll"
+    }
+  }
+]

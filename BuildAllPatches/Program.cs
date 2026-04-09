@@ -17,9 +17,9 @@ using Wabbajack.RateLimiter;
 using Wabbajack.Services.OSIntegrated;
 using Wabbajack.VFS;
 
-var ModId = 57618;
-
 var workingFolder = args[0].ToAbsolutePath();
+
+/*var ModId = 57618;
 var host = Host.CreateDefaultBuilder()
     .ConfigureServices(s =>
     {
@@ -28,6 +28,7 @@ var host = Host.CreateDefaultBuilder()
 
 var built = host.Build();
 var nexusClient = built.Services.GetRequiredService<NexusApi>();
+*/
 
 var limiter = new Resource<FileHashCache>("File Hashing", 10);
 var hashCache = new FileHashCache(workingFolder.Combine("hash_cache.sqlite"), limiter);
@@ -279,7 +280,7 @@ foreach (var build in builds)
 }
 
 
-var (response, info) = await nexusClient.ModFiles(Game.SkyrimSpecialEdition.MetaData().NexusName!, ModId);
+/*var (response, info) = await nexusClient.ModFiles("Starfield"!, ModId);
 
 foreach (var build in builds)
 {
@@ -316,4 +317,4 @@ foreach (var build in builds)
     };
 
     await nexusClient.UploadFile(definition);
-}
+}*/

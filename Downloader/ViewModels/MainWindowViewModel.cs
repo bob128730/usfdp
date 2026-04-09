@@ -261,18 +261,18 @@ namespace Patcher.ViewModels
 
             var outputPath = GamePath;
 
-            var seAppId = (uint) Game.SkyrimSpecialEdition.MetaData().SteamIDs.First();
+            uint sfAppid = 1716740;
 
             var selectedVersion = BestOfBothWorlds ? GameViewModel.GameVersions.Last().Version : SelectedVersion!.Version;
             var exeVersion = SelectedVersion!.Version;
 
 
-            _wjClient.SendMetric("started_ussedp", $"{exeVersion}_{selectedVersion}").FireAndForget();
+            _wjClient.SendMetric("started_usfdp", $"{exeVersion}_{selectedVersion}").FireAndForget();
             
             var versions = new (uint AppId, string Version)[]
             {
-                (seAppId, selectedVersion),
-                (seAppId, exeVersion)
+                (sfAppid, selectedVersion),
+                (sfAppid, exeVersion)
             };
             versions = versions.Distinct().ToArray();
             
@@ -354,7 +354,7 @@ namespace Patcher.ViewModels
 
             _totalJob = new DummyJob
             {
-                Description = "Downloading Skyrim",
+                Description = "Downloading Starfield",
                 Size = files.Sum(f => (long)f.FileData.TotalSize) >> 8
             };
 
@@ -393,7 +393,7 @@ namespace Patcher.ViewModels
 
             _totalJob = null;
             
-            _wjClient.SendMetric("ended_ussedp", $"{exeVersion}_{selectedVersion}").FireAndForget();
+            _wjClient.SendMetric("ended_usfdp", $"{exeVersion}_{selectedVersion}").FireAndForget();
             _logger.LogInformation("Worked completed, logging you out of Steam");
             await _token.Delete();
             await SetSteamStatus();
