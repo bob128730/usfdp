@@ -1,10 +1,12 @@
 using Avalonia.OpenGL;
 using DTOs;
-using Wabbajack.Paths;
 using F23.StringSimilarity;
+using Octodiff.Core;
+using System.Net.Security;
 using Ussedp;
 using Wabbajack.Common;
 using Wabbajack.Hashing.xxHash64;
+using Wabbajack.Paths;
 using Wabbajack.Paths.IO;
 using Wabbajack.VFS;
 
@@ -95,7 +97,14 @@ public class Generator
         await using var os = guid.ToRelativePath().RelativeTo(workingFolder.Combine("patches")).Open(FileMode.Create, FileAccess.ReadWrite);
         
         Console.WriteLine($"Diffing: {inst.FromFile} -> {inst.Path}");
+
         using var sig = new MemoryStream();
+        var signatureBuilder = new SignatureBuilder();
+        signatureBuilder.Build(oldData, new SignatureWriter(sig));
+
+        sig.Position = 0;
+        oldData.Position = 0;
+
         OctoDiff.Create(oldData, newData, sig, os);
     }
 }
