@@ -1,13 +1,4 @@
-﻿using Avalonia.Threading;
-using DTOs;
-using GameFinder.StoreHandlers.Steam;
-using MessageBox.Avalonia;
-using Octodiff.Core;
-using Octodiff.Diagnostics;
-using ReactiveUI;
-using ReactiveUI.Fody.Helpers;
-using SkiaSharp;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Compression;
@@ -20,6 +11,14 @@ using System.Text;
 using System.Text.Json;
 using System.Threading;
 using System.Threading.Tasks;
+using Avalonia.Threading;
+using DTOs;
+using GameFinder.StoreHandlers.Steam;
+using MessageBox.Avalonia;
+using Octodiff.Core;
+using Octodiff.Diagnostics;
+using ReactiveUI;
+using ReactiveUI.Fody.Helpers;
 using Ussedp;
 using Wabbajack.DTOs;
 using Wabbajack.Hashing.xxHash64;
@@ -50,19 +49,19 @@ namespace Patcher.ViewModels
         {
             Activator = new ViewModelActivator();
             
-            var tsk = LocateAndSetGame(1716740);
+            var tsk = LocateAndSetGame(Game.SkyrimSpecialEdition);
             StartPatching = ReactiveCommand.CreateFromTask(() => Start());
         }
 
-        public async Task LocateAndSetGame(uint appId)
+        public async Task LocateAndSetGame(Game game)
         {
             try
             {
-                Log($"Looking for Starfield");
+                Log($"Looking for {game.MetaData().HumanFriendlyGameName}");
                 var handler = new SteamHandler();
                 handler.FindAllGames();
 
-                var steamGame = handler.Games.First(g => appId == g.ID);
+                var steamGame = handler.Games.First(g => game.MetaData().SteamIDs.Contains(g.ID));
 
                 var path = steamGame.Path.ToAbsolutePath();
                 GamePath = path;
@@ -71,7 +70,7 @@ namespace Patcher.ViewModels
             catch (Exception ex)
             {
                 var msg = MessageBoxManager.GetMessageBoxStandardWindow("Error",
-                    $"Couldn't locate Starfield via Steam, you will have to locate it manually\n using the folder button");
+                    $"Couldn't locate {game.MetaData().HumanFriendlyGameName} via Steam, you will have to locate it manually\n using the folder button");
                 await msg.Show();
             }
         }
@@ -128,15 +127,8 @@ namespace Patcher.ViewModels
         private async Task PatchFile(Instruction file, AbsolutePath gamePath)
         {
             Log($"Patching {file.Path}");
-
-            var srcPath = file.FromFile.ToRelativePath().RelativeTo(gamePath);
-
-            Hash oldHash;
-            await using (var srcStream = srcPath.Open(FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                oldHash = await srcStream.HashingCopy(Stream.Null, CancellationToken.None);
-            }
-
+            var oldData = await file.FromFile.ToRelativePath().RelativeTo(gamePath).ReadAllBytesAsync();
+            var oldHash = await oldData.Hash();
             if (oldHash != Hash.FromLong(file.SrcHash))
             {
                 if (oldHash != Hash.FromLong(file.DestHash))
@@ -157,11 +149,7 @@ namespace Patcher.ViewModels
 
             var deltaApplier = new DeltaApplier();
             var os = new MemoryStream();
-
-            using (var srcStream = srcPath.Open(FileMode.Open, FileAccess.Read, FileShare.Read))
-            {
-                deltaApplier.Apply(srcStream, new BinaryDeltaReader(ms, new NullProgressReporter()), os);
-            }
+            deltaApplier.Apply(new MemoryStream(oldData), new BinaryDeltaReader(ms, new NullProgressReporter()), os);
 
             Log("Verifying file");
             os.Position = 0;
