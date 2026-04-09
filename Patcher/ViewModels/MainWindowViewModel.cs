@@ -97,7 +97,7 @@ namespace Patcher.ViewModels
                         case ResultType.Identical:
                             break;
                         case ResultType.Deleted:
-                            if (fullPath.FileExists())
+                            /*if (fullPath.FileExists())
                             {
                                 Log($"Deleting {file.Path}");
                                 fullPath.Delete();
@@ -105,7 +105,7 @@ namespace Patcher.ViewModels
                             else
                             {
                                 Log($"File already deleted {file.Path}");
-                            }
+                            }*/
 
                             break;
                         case ResultType.Patched:
