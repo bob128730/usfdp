@@ -88,13 +88,14 @@ public class Generator
         var fromPath = inst.FromFile.ToRelativePath().RelativeTo(build.FromPath);
         var toPath = inst.Path.ToRelativePath().RelativeTo(build.ToPath);
         
-        var oldData = await fromPath.ReadAllBytesAsync();
-        var newData = await toPath.ReadAllBytesAsync();
+        await using var oldData = fromPath.Open(FileMode.Open, FileAccess.Read, FileShare.Read);
+        await using var newData = toPath.Open(FileMode.Open, FileAccess.Read, FileShare.Read);
 
-        var guid = (await oldData.Hash()).ToHex() + "_" + (await newData.Hash()).ToHex();
+        var guid = ( await fromPath.Hash()).ToHex() + "_" + (await toPath.Hash()).ToHex();
         await using var os = guid.ToRelativePath().RelativeTo(workingFolder.Combine("patches")).Open(FileMode.Create, FileAccess.ReadWrite);
         
         Console.WriteLine($"Diffing: {inst.FromFile} -> {inst.Path}");
-        OctoDiff.Create(oldData, newData, os);
+        using var sig = new MemoryStream();
+        OctoDiff.Create(oldData, newData, sig, os);
     }
 }
