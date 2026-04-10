@@ -155,7 +155,7 @@ namespace Patcher.ViewModels
             Log("Pre-check passed, patching file");
 
             Log($"Reading Patch File {file.PatchFile}");
-            var patchFile = await Extractor.LoadFile(file.PatchFile);
+            var patchFile = await Path.GetDirectoryName(Environment.ProcessPath)!.ToAbsolutePath().Combine("patches").Combine(file.PatchFile).ReadAllBytesAsync();
 
             await using (var os = tempPath.Open(FileMode.Create, FileAccess.ReadWrite, FileShare.None))
             {

@@ -132,6 +132,7 @@ namespace Patcher.ViewModels
                     .CombineLatest(this.WhenAnyValue(vm => vm.IsLoggedIn),
                         this.WhenAnyValue(vm => vm.SelectedVersion))
                     .Select(t => t.First && t.Second && t.Third != null));
+                    
             
             LoginCommand = ReactiveCommand.Create(async () =>
             {
@@ -199,6 +200,7 @@ namespace Patcher.ViewModels
 
         private async Task Login()
         {
+
             await _token.SetToken(new SteamLoginState
             {
                 User = SteamUsername,
@@ -217,6 +219,7 @@ namespace Patcher.ViewModels
 
         private async Task SetSteamStatus()
         {
+            _logger.LogInformation("SetSteamStatus started");
             if (!_token.HaveToken())
             {
                 RxApp.MainThreadScheduler.Schedule(false, (_, _) =>

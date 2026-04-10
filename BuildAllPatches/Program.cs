@@ -223,13 +223,17 @@ foreach (var build in builds)
     }));
     offsets["instructions.json"] = new Entry {Offset = outStream.Position, Size = jsonBytes.Length};
     await outStream.WriteAsync(jsonBytes);
+
+    var patchOut = workingFolder.Combine("uploads").Combine("patches");
     
     foreach (var patch in patchNames)
     {
+
         Console.WriteLine($"- {patch}");
-        var patchData = await workingFolder.Combine("patches").Combine(patch).ReadAllBytesAsync();
-        offsets[patch] = new Entry {Offset = outStream.Position, Size = patchData.Length};
-        await outStream.WriteAsync(patchData);
+        var patchIn = workingFolder.Combine("patches").Combine(patch);
+        await patchIn.CopyToAsync(patchOut.Combine(patch), true, default);
+//        offsets[patch] = new Entry {Offset = outStream.Position, Size = patchData.Length};
+//        await outStream.WriteAsync(patchData);
     }
 
     var jsonOffsets = outStream.Position;
